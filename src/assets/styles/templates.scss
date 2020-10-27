@@ -6,9 +6,6 @@ body{
 a{
     font-size: $link__fontSize;
 }
-button{
-    font-size: $button__fontSize;
-}
 p{
     font-size: 22px;
     color:$p__fontSize;
@@ -34,4 +31,8 @@ h2 {
 
 h3 {
     @extend %h3__styles;
+}
+
+button{
+    @extend %button__styles;
 }

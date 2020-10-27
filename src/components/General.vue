@@ -1,12 +1,14 @@
 <template>
   <section class="general">
     <div class="wrapper">
-      <h1 class="general__title">ОФИСНЫЕ КРЕСЛА ОТ ПРОИЗВОДИТЕЛЯ</h1>
-      <p class="general__subtitle">
-        Ваш рабочий процесс будет обеспечен комфортом и продуктивностью
-      </p>
-      <button class="general__popup"></button>
-      <Form />
+      <div class="general__content">
+        <h1 class="general__title">ОФИСНЫЕ КРЕСЛА ОТ ПРОИЗВОДИТЕЛЯ</h1>
+        <p class="general__subtitle">
+          Ваш рабочий процесс будет обеспечен комфортом и продуктивностью
+        </p>
+        <button class="general__popup">Оставить заявку</button>
+        <Form />
+      </div>
     </div>
   </section>
 </template>
@@ -25,5 +27,26 @@ export default {
 
 <style lang="scss">
 .general {
+  padding: 60px 2%;
+  background-image: url("/img/general/fone.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 80vh;
+
+  .general__content {
+    width: 50%;
+  }
+  .general__title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .general__subtitle {
+  }
+
+  .general__popup {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 </style>

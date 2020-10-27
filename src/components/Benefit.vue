@@ -7,10 +7,8 @@
           v-for="(item, index) in benefitList"
           :key="index"
         >
-          <svg class="benefit__item-icon">
-            <use></use>
-          </svg>
-          <p class="benefit__item-title"></p>
+          <img :src="item.img" class="benefit__item-icon" />
+          <p class="benefit__item-title">{{ item.title }}</p>
         </li>
       </ul>
     </div>
@@ -47,4 +45,31 @@ export default {
 
 
 <style lang="scss">
+.benefit {
+  padding: 60px 2%;
+  background-color: #232323;
+  color: white;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 20%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item-icon {
+    margin-bottom: 10px;
+  }
+
+  &__item-title {
+  }
+}
 </style>
