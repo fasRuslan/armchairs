@@ -1,7 +1,7 @@
 // ==fonts==
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap');
 
-$font-stack:'Roboto', sans-serif;
+$font-stack:'Open Sans', sans-serif;
 // ==/fonts==
 
 // ==body==
@@ -13,27 +13,25 @@ $sectionPadding:2% 60px;
 // ==/section==
 
 //Font-Size
-$link__fontSize:20px;
-$button__fontSize:16px;
-$p__fontSize:16px;
+$link__fontSize:24px;
+$button__fontSize:20px;
+$p__fontSize:20px;
 $span__fontSize:16px;
 
 // Extend
  %h1__styles {
     font-style: normal;
     font-weight: bold;
-    font-size: 45px;
-    color: #FFF500;
+    font-size: 40px;
+    color: #000000;
  }
 
 %h2__styles {
     font-style: normal;
-    font-size: 45px;
+    font-size: 33px;
     font-weight: 600;
     line-height: 61px;
     color: #040202;
-    text-align: center;
-    font-weight: bold;
     margin-bottom: 80px;
 }
 
@@ -41,7 +39,7 @@ $span__fontSize:16px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 28px;
     line-height: 61px;
 }
 
