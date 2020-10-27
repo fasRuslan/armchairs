@@ -1,25 +1,27 @@
 <template>
   <section class="reviews">
-    <h2 class="reviews__title">Отзывы наших довольных клиентов</h2>
-    <template v-if="reviewsList.length > 0">
-      <VueAgile class="reviews__item" :options="sliderOpt">
-        <div v-for="(slide, index) in reviewsList" :key="index">
-          <div
-            class="reviews__slider-content d-flex align-items-center flex-wrap"
-          >
-            <h3 class="slider__title">
-              {{ slide.title }}
-            </h3>
+    <div class="wrapper">
+      <h2 class="reviews__title">Отзывы наших довольных клиентов</h2>
+      <template v-if="reviewsList.length > 0">
+        <VueAgile class="reviews__item" :options="sliderOpt">
+          <div v-for="(slide, index) in reviewsList" :key="index">
+            <div
+                    class="reviews__slider-content d-flex align-items-center flex-wrap"
+            >
+              <h3 class="slider__title">
+                {{ slide.title }}
+              </h3>
 
-            <img v-bind:src="slide.img" alt="" />
+              <img v-bind:src="slide.img" alt="" />
 
-            <p class="slider__description">
-              {{ slide.description }}
-            </p>
+              <p class="slider__description">
+                {{ slide.description }}
+              </p>
+            </div>
           </div>
-        </div>
-      </VueAgile>
-    </template>
+        </VueAgile>
+      </template>
+    </div>
   </section>
 </template>
 
@@ -59,19 +61,10 @@ export default {
         },
       ],
       sliderOpt: {
-        slideToShow: 2,
-        SlideToScroll: 1,
+        slidesToShow: 2,
+        SlidesToScroll: 2,
         navButtons: true,
         dots: false,
-        // responsive: [
-        //   {
-        //     breakpoint: 768,
-        //     settings: {
-        //       slideToShow: 1,
-        //       navButtons: false,
-        //     },
-        //   },
-        // ],
       },
     };
   },
@@ -86,10 +79,11 @@ export default {
   }
 
   &__slider-content {
-    max-width: 500px;
+
   }
   .slider {
     &__title {
+      margin-right: 30px;
     }
 
     &__description {
