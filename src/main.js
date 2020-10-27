@@ -7,6 +7,10 @@ Vue.use(VueMask);
 
 Vue.use(BootstrapVue);
 
+import VueAgile from "vue-agile";
+
+Vue.use(VueAgile);
+
 Vue.config.productionTip = false
 
 new Vue({

@@ -1,10 +1,11 @@
 <template>
   <section class="general">
     <div class="wrapper">
-      <div class="general__content">
+      <div class="general__content col-5">
         <h1 class="general__title">ОФИСНЫЕ КРЕСЛА ОТ ПРОИЗВОДИТЕЛЯ</h1>
         <p class="general__subtitle">
-          Ваш рабочий процесс будет обеспечен комфортом и продуктивностью
+          Ваш рабочий процесс будет <br />
+          обеспечен комфортом и <br />продуктивностью
         </p>
         <button class="general__popup">Оставить заявку</button>
         <Form />
@@ -14,7 +15,7 @@
 </template>
 
 <script>
-import Form from "./Form.vue";
+import Form from "../Layouts/Form.vue";
 
 export default {
   name: "General",

@@ -2,9 +2,11 @@
   <section class="stages">
     <div class="wrapper">
       <h2 class="stages__title">Как сделать заказ</h2>
-      <ul class="stages__list">
+      <ul
+        class="stages__list d-flex justify-content-between align-items-center flex-wrap"
+      >
         <li
-          class="stages__item"
+          class="stages__item col-5 d-flex justify-content-between align-items-center"
           v-for="(stagesItem, index) in stagesList"
           :key="index"
         >
@@ -47,4 +49,25 @@ export default {
 </script>
 
 <style lang="scss">
+.stages {
+  padding: 60px 2%;
+  background-image: url(/img/stages/fone.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+  .stage__item-title {
+    margin-left: 15px;
+    color: #363636;
+    font-size: 20px;
+  }
+}
 </style>
