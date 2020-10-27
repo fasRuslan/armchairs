@@ -32,7 +32,7 @@ $span__fontSize:16px;
     font-weight: 500;
     line-height: 61px;
     color: #040202;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 %h3__styles {
@@ -52,10 +52,10 @@ $span__fontSize:16px;
 }
 
 %button__styles {
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-background-color: #FFF501;
-padding: 10px 20px;
-cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    background-color: #FFF501;
+    padding: 10px 20px;
+    cursor: pointer;
 }

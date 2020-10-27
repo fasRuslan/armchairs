@@ -5,7 +5,7 @@ import { BootstrapVue } from 'bootstrap-vue'
 
 Vue.use(VueMask);
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false
 
