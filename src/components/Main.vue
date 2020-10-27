@@ -1,7 +1,10 @@
 <template>
   <div class="main">
     <General />
+    <Benefit />
+    <Advantages />
     <About />
+    <Stages />
     <Services />
   </div>
 </template>
@@ -9,13 +12,19 @@
 
 <script>
 import General from "./General.vue";
-import Services from "./Services.vue";
+import Benefit from "./Benefit.vue";
+import Advantages from "./Advantages.vue";
 import About from "./About.vue";
+import Stages from "./Stages.vue";
+import Services from "./Services.vue";
 
 export default {
   name: "Main",
   components: {
     General,
+    Benefit,
+    Advantages,
+    Stages,
     Services,
     About,
   },

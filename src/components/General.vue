@@ -1,6 +1,13 @@
 <template>
   <section class="general">
-    <Form />
+    <div class="wrapper">
+      <h1 class="general__title">ОФИСНЫЕ КРЕСЛА ОТ ПРОИЗВОДИТЕЛЯ</h1>
+      <p class="general__subtitle">
+        Ваш рабочий процесс будет обеспечен комфортом и продуктивностью
+      </p>
+      <button class="general__popup"></button>
+      <Form />
+    </div>
   </section>
 </template>
 
