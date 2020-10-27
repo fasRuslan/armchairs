@@ -1,0 +1,64 @@
+// ==fonts==
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+$font-stack:'Roboto', sans-serif;
+// ==/fonts==
+
+// ==body==
+$bodyBgColor: #fff;
+$bodyColor: #000000; // ==/body==
+
+// ==section==
+$sectionPadding:2% 60px;
+// ==/section==
+
+//Font-Size
+$link__fontSize:20px;
+$button__fontSize:16px;
+$p__fontSize:16px;
+$span__fontSize:16px;
+
+// Extend
+ %h1__styles {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    color: #FFF500;
+ }
+
+%h2__styles {
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 61px;
+    color: #040202;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+%h3__styles {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+%link__styles {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    transition: all .5s ease 0s;
+}
+
+%button__styles {
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+background-color: #FFF500;
+border-radius: 10px;
+padding: 10px 20px;
+cursor: pointer;
+}
