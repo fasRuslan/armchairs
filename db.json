@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "image": "1.jpg",
+            "name": "Сенатор",
+            "price": 5.350,
+            "article": "T1",
+            "available": true,
+            "category": "Сентор"
+        },
+        {
+            "image": "2.jpg",
+            "name": "Сенатор",
+            "price": 5.350,
+            "article": "T2",
+            "available": true,
+            "category": "Сентор"
+        },
+        {
+            "image": "3.jpg",
+            "name": "Сенатор",
+            "price": 5.350,
+            "article": "T3",
+            "available": true,
+            "category": "Сентор"
+        },
+        {
+            "image": "4.jpg",
+            "name": "Менеджер",
+            "price": 5.350,
+            "article": "T4",
+            "available": true,
+            "category": "Менеджер"
+        },
+        {
+            "image": "5.jpg",
+            "name": "Менеджер",
+            "price": 5.350,
+            "article": "T5",
+            "available": true,
+            "category": "Менеджер"
+        },
+        {
+            "image": "6.jpg",
+            "name": "Менеджер",
+            "price": 5.350,
+            "article": "T6",
+            "available": true,
+            "category": "Менеджер"
+        },
+        {
+            "image": "7.jpg",
+            "name": "Ральф",
+            "price": 5.350,
+            "article": "T7",
+            "available": true,
+            "category": "Ральф"
+        },
+        {
+            "image": "8.jpg",
+            "name": "Ральф",
+            "price": 5.350,
+            "article": "T8",
+            "available": true,
+            "category": "Ральф"
+        },
+        {
+            "image": "9.jpg",
+            "name": "Ральф",
+            "price": 5.350,
+            "article": "T9",
+            "available": true,
+            "category": "Ральф"
+        },
+    ]
+}

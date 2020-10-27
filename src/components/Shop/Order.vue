@@ -1,10 +1,10 @@
 <template>
-  <div class="v-shop-wrapper"></div>
+  <div class="order"></div>
 </template>
 
 <script>
 export default {
-  name: "v-catalog",
+  name: "Order",
 };
 </script>
 
