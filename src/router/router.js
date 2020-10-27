@@ -5,7 +5,6 @@ import Card from "../components/Shop/Card";
 import Cart from "../components/Shop/Cart";
 import Catalog from "../components/Shop/Catalog";
 import Order from "../components/Shop/Order";
-import catalogItem from "../components/Shop/catalogItem";
 
 Vue.use(Router);
 

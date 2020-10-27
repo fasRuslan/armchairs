@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import catalogItem from "./catalogItem";
+import catalogItem from "./CatalogItem";
 
 export default {
   name: "Catalog",
