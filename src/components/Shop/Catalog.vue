@@ -1,12 +1,16 @@
 <template>
   <div class="catalog">
-    <h1 class="catalog__title">Каталог</h1>
-    <div class="catalog__list">
-      <catalogItem
-        v-for="product in products"
-        :key="product.article"
-        :product="product"
-      />
+    <div class="wrapper">
+      <h1 class="catalog__title">Каталог</h1>
+      <div
+        class="catalog__list d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <catalogItem
+          v-for="product in products"
+          :key="product.article"
+          :product="product"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -23,7 +27,15 @@ export default {
     return {
       products: [
         {
-          image: "1.jpg",
+          image: "1.png",
+          name: "Сенатор",
+          price: 5.35,
+          article: "T1",
+          available: true,
+          category: "Сенатор",
+        },
+        {
+          image: "2.png",
           name: "Сенатор",
           price: 5.35,
           article: "T1",
@@ -31,7 +43,7 @@ export default {
           category: "Сентор",
         },
         {
-          image: "2.jpg",
+          image: "3.png",
           name: "Сенатор",
           price: 5.35,
           article: "T1",
@@ -39,15 +51,7 @@ export default {
           category: "Сентор",
         },
         {
-          image: "3.jpg",
-          name: "Сенатор",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Сентор",
-        },
-        {
-          image: "4.jpg",
+          image: "4.png",
           name: "Менеджер",
           price: 5.35,
           article: "T1",
@@ -55,7 +59,7 @@ export default {
           category: "Менеджер",
         },
         {
-          image: "5.jpg",
+          image: "5.png",
           name: "Менеджер",
           price: 5.35,
           article: "T1",
@@ -63,7 +67,7 @@ export default {
           category: "Менеджер",
         },
         {
-          image: "6.jpg",
+          image: "6.png",
           name: "Менеджер",
           price: 5.35,
           article: "T1",
@@ -71,7 +75,7 @@ export default {
           category: "Менеджер",
         },
         {
-          image: "7.jpg",
+          image: "7.png",
           name: "Ральф",
           price: 5.35,
           article: "T1",
@@ -79,7 +83,7 @@ export default {
           category: "Ральф",
         },
         {
-          image: "8.jpg",
+          image: "8.png",
           name: "Ральф",
           price: 5.35,
           article: "T1",
@@ -87,7 +91,7 @@ export default {
           category: "Ральф",
         },
         {
-          image: "9.jpg",
+          image: "9.png",
           name: "Ральф",
           price: 5.35,
           article: "T1",

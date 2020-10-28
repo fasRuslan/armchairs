@@ -1,10 +1,10 @@
 <template>
-  <div class="v-cart"></div>
+  <div class="product-detail"></div>
 </template>
 
 <script>
 export default {
-  name: "v-cart",
+  name: "ProductDetail",
 };
 </script>
 

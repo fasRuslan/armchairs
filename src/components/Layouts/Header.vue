@@ -4,8 +4,24 @@
       <div class="logo">logo</div>
       <nav class="nav">
         <ul class="nav__list d-flex justify-content-between align-items-center">
-          <li class="nav__item" v-for="(item, index) in menu" :key="index">
-            <a href="#" class="nav__item-link">{{ item.link }}</a>
+          <li class="nav__item">
+            <router-link :to="{ name: 'Home' }" class="nav__item-link">
+              Главная
+            </router-link>
+          </li>
+          <li class="nav__item">
+            <router-link :to="{ name: 'Catalog' }" class="nav__item-link">
+              Каталог
+            </router-link>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item-link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -33,14 +49,17 @@ export default {
         {
           link: "О компании",
           anchors: "",
+          href: "",
         },
         {
           link: "Отзывы",
           anchors: "",
+          href: "",
         },
         {
           link: "Контакты",
           anchors: "",
+          href: "",
         },
       ],
     };

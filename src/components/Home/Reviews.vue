@@ -6,7 +6,7 @@
         <VueAgile class="reviews__item" :options="sliderOpt">
           <div v-for="(slide, index) in reviewsList" :key="index">
             <div
-                    class="reviews__slider-content d-flex align-items-center flex-wrap"
+              class="reviews__slider-content d-flex align-items-center flex-wrap"
             >
               <h3 class="slider__title">
                 {{ slide.title }}
@@ -79,7 +79,6 @@ export default {
   }
 
   &__slider-content {
-
   }
   .slider {
     &__title {

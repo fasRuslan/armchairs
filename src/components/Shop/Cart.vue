@@ -1,5 +1,5 @@
 <template>
-  <div class="v-shop-wrapper"></div>
+  <div class="Cart"></div>
 </template>
 
 <script>

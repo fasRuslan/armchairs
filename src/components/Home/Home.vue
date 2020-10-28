@@ -3,10 +3,10 @@
     <General />
     <Benefit />
     <Advantages />
+    <Services />
     <About />
     <Stages />
     <Reviews />
-    <Services />
   </div>
 </template>
 

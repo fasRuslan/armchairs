@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from "../components/Home/Main";
-import Card from "../components/Shop/Card";
+import Home from "../components/Home/Home";
+import ProductDetail from "../components/Shop/ProductDetail";
 import Cart from "../components/Shop/Cart";
 import Catalog from "../components/Shop/Catalog";
 import Order from "../components/Shop/Order";
-import catalogItem from "../components/Shop/catalogItem";
+//import CatalogItem from "../components/Shop/CatalogItem";
 
 Vue.use(Router);
 
@@ -15,8 +15,8 @@ let router = new Router({
     routes: [
         {
             path: '/',
-            name: 'Main',
-            component: Main
+            name: 'Home',
+            component: Home
         },
         {
             path: '/сatalog',
@@ -31,8 +31,8 @@ let router = new Router({
         },
          {
             path: '/Catalog/:name',
-            name: 'Card',
-            component: Card,
+            name: 'ProductDetail',
+            component: ProductDetail,
             props: true,
         },
         {
