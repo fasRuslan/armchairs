@@ -2,14 +2,25 @@
   <div
     class="catalog-item d-flex flex-column justify-content-between align-items-center"
   >
-    <img
-      class="catalog-item__picture"
-      :src="'img/shop/catalogitem/' + product.image"
-      alt=""
-    />
-    <h4 class="catalog-item__name">{{ product.name }}</h4>
-    <p class="catalog-item__price">Цена:{{ product.price }}</p>
-    <button class="catalog-item__add-to-card-button">Добавить в корзину</button>
+    <router-link
+      :to="{ name: 'ProductDetail', params: { link: product.link } }"
+    >
+      <div class="catalog-item__picture-box">
+        <img
+          class="catalog-item__picture"
+          :src="'img/shop/catalogitem/' + product.image"
+          alt=""
+        />
+      </div>
+      <h4 class="catalog-item__name">{{ product.name }}</h4>
+      <p class="catalog-item__price">Цена:{{ product.price }}р.</p>
+      <button
+        class="catalog-item__add-to-card-button"
+        @click="sendDataToParent"
+      >
+        Добавить в корзину
+      </button>
+    </router-link>
   </div>
 </template>
 
@@ -24,14 +35,25 @@ export default {
       },
     },
   },
+  data() {
+    return {};
+  },
+  methods: {
+    sendDataToParent() {
+      this.$emit("sendarticle", this.product.article);
+    },
+  },
 };
 </script>
 
 <style lang="scss">
 .catalog-item {
+  padding: 20px 20px;
   max-width: 30%;
   margin-bottom: 60px;
   height: 500px;
+  border: 1px solid #aeaeae;
+  border-radius: 20px;
   &__name {
     font-size: 20px;
     font-weight: normal;
@@ -47,8 +69,15 @@ export default {
 
   &__add-to-card-button {
   }
+  &____picture-box {
+    width: 100%;
+    text-align: center;
+  }
   &__picture {
-    width: 80%;
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
 }

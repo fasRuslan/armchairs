@@ -9,6 +9,7 @@
           v-for="product in products"
           :key="product.article"
           :product="product"
+          @sendarticle="showChildArticleInConsole"
         />
       </div>
     </div>
@@ -25,84 +26,26 @@ export default {
   },
   data() {
     return {
-      products: [
-        {
-          image: "1.png",
-          name: "Сенатор",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Сенатор",
-        },
-        {
-          image: "2.png",
-          name: "Сенатор",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Сентор",
-        },
-        {
-          image: "3.png",
-          name: "Сенатор",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Сентор",
-        },
-        {
-          image: "4.png",
-          name: "Менеджер",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Менеджер",
-        },
-        {
-          image: "5.png",
-          name: "Менеджер",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Менеджер",
-        },
-        {
-          image: "6.png",
-          name: "Менеджер",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Менеджер",
-        },
-        {
-          image: "7.png",
-          name: "Ральф",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Ральф",
-        },
-        {
-          image: "8.png",
-          name: "Ральф",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Ральф",
-        },
-        {
-          image: "9.png",
-          name: "Ральф",
-          price: 5.35,
-          article: "T1",
-          available: true,
-          category: "Ральф",
-        },
-      ],
+      products: [],
     };
+  },
+  computed: {},
+  methods: {
+    ...mapAction(["GET_PRODUCTS_FROM_API"]),
+    showChildArticleInConsole(data) {
+      console.log(data);
+    },
+  },
+  created() {
+    this.GET_PRODUCTS_FROM_API;
   },
 };
 </script>
 
 <style lang="scss">
+.catalog {
+  &__title {
+    margin-bottom: 50px;
+  }
+}
 </style>
