@@ -18,6 +18,7 @@
 
 <script>
 import catalogItem from "./CatalogItem";
+import {mapActions, mapGetters} from 'vuex'
 
 export default {
   name: "Catalog",
@@ -29,16 +30,27 @@ export default {
       products: [],
     };
   },
-  computed: {},
+  computed: {
+    ...mapGetters([
+      'PRODUCTS',
+    ]),
+  },
   methods: {
-    ...mapAction(["GET_PRODUCTS_FROM_API"]),
+    ...mapActions([
+      'GET_PRODUCTS',
+    ]),
     showChildArticleInConsole(data) {
       console.log(data);
     },
   },
   created() {
-    this.GET_PRODUCTS_FROM_API;
-  },
+    this.GET_PRODUCTS()
+            .then((response) => {
+              if (response.data) {
+                this.products = [...this.PRODUCTS];
+              }
+            });
+  }
 };
 </script>
 
