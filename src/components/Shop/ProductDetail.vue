@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
+  import {mapActions, mapGetters} from "vuex";
 
 export default {
   name: "ProductDetail",
@@ -39,7 +39,13 @@ export default {
     ...mapGetters(["PRODUCTS"]),
   },
   methods: {
-    ...mapActions(["GET_PRODUCTS"]),
+    ...mapActions([
+      'ADD_CART',
+      'GET_PRODUCTS',
+    ]),
+    addCart() {
+      this.ADD_CART(this.products[0]);
+    },
   },
   created() {
     let self = this;
