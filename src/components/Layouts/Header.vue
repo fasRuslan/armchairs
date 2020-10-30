@@ -22,11 +22,16 @@
           </li>
           <li class="nav__item">
             <a class="nav__item-link">
-              <router-link
-                :to="{ name: 'Cart', params: { cart_data: CART } }"
-                class="nav__item-link"
-              >
-                Корзина
+              <router-link class="main-header__cart-link"
+                           :to="{name: 'Cart', params: {cart_data: CART}}">
+                <div class="catalog__cart">
+                  <div class="catalog__cart-icon">
+                    <img src="/img/ic-cart.svg" width="40">
+                  </div>
+                  <span class="catalog__cart-count">
+                    {{CART.reduce((s, i) => s = s + i.quantity, 0)}}
+                  </span>
+                </div>
               </router-link>
             </a>
           </li>

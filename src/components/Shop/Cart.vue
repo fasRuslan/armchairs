@@ -11,6 +11,11 @@
           @increment="increment(index)"
           @decrement="decrement(index)"
         />
+        <router-link
+                :to="{ name: 'Order' }"
+        >
+          Оформить заказ
+        </router-link>
       </div>
     </div>
   </div>
