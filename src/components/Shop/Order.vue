@@ -79,6 +79,9 @@
               </button>
             </div>
           </form>
+          <div>
+            {{message}}
+          </div>
         </div>
       </div>
     </div>
@@ -103,6 +106,7 @@
         ind: '',
         city: '',
         address: '',
+        message: '',
       }
     },
     validators: {
@@ -168,7 +172,9 @@
             name: self.name,
             phone: self.phone,
             email: self.email,
-            text: self.text,
+            ind: self.ind,
+            city: self.city,
+            address: self.address,
             cart: self.cart_data,
             cartTotal: self.cartTotal
           },
@@ -177,10 +183,14 @@
           }
         }).then(function (response) {
           self.message = response.data;
-          self.name = '',
-          self.phone = '',
-          self.email = '',
-          self.text = ''
+          self.name = '';
+          self.phone = '';
+          self.email = '';
+          self.ind = '';
+          self.city = '';
+          self.address = '';
+          self.cart_data = [];
+          self.CLEAR_CART();
         });
       },
       submit: function() {
@@ -189,7 +199,6 @@
                 .then(function(success) {
                   if (success) {
                     self.mail();
-                    self.CLEAR_CART();
                   }
                 });
       },
