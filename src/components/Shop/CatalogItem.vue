@@ -14,13 +14,10 @@
       </div>
       <h4 class="catalog-item__name">{{ product.name }}</h4>
       <p class="catalog-item__price">Цена:{{ product.price }}р.</p>
-      <button
-        class="catalog-item__add-to-card-button"
-        @click="sendDataToParent"
-      >
-        Добавить в корзину
-      </button>
     </router-link>
+    <button class="catalog-item__add-to-card-button" @click="sendDataToParent">
+      Добавить в корзину
+    </button>
   </div>
 </template>
 
@@ -40,7 +37,7 @@ export default {
   },
   methods: {
     sendDataToParent() {
-      this.$emit("sendarticle", this.product.article);
+      this.$emit("sendarticle", this.product);
     },
   },
 };

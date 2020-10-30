@@ -24,9 +24,12 @@
             />
             <p class="service__item-link-title">{{ serviceItem.title }}</p>
             <p class="service__item-link-price">{{ serviceItem.price }}</p>
-            <button class="service__item-link-button">
+            <router-link
+              :to="{ name: 'Catalog' }"
+              class="service__item-link-button"
+            >
               {{ serviceItem.button }}
-            </button>
+            </router-link>
           </a>
         </li>
       </ul>

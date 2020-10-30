@@ -9,7 +9,7 @@
           v-for="product in products"
           :key="product.article"
           :product="product"
-          @sendarticle="showChildArticleInConsole"
+          @sendarticle="addToCart"
         />
       </div>
     </div>
@@ -18,7 +18,7 @@
 
 <script>
 import catalogItem from "./CatalogItem";
-import {mapActions, mapGetters} from 'vuex'
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "Catalog",
@@ -31,26 +31,21 @@ export default {
     };
   },
   computed: {
-    ...mapGetters([
-      'PRODUCTS',
-    ]),
+    ...mapGetters(["PRODUCTS"]),
   },
   methods: {
-    ...mapActions([
-      'GET_PRODUCTS',
-    ]),
-    showChildArticleInConsole(data) {
-      console.log(data);
+    ...mapActions(["GET_PRODUCTS", "ADD_TO_CART"]),
+    addToCart(data) {
+      this.ADD_TO_CART(data);
     },
   },
   created() {
-    this.GET_PRODUCTS()
-            .then((response) => {
-              if (response.data) {
-                this.products = [...this.PRODUCTS];
-              }
-            });
-  }
+    this.GET_PRODUCTS().then((response) => {
+      if (response.data) {
+        this.products = [...this.PRODUCTS];
+      }
+    });
+  },
 };
 </script>
 

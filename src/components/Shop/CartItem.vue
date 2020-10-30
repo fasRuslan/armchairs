@@ -1,13 +1,21 @@
 <template>
   <div class="cart-item">
     <div class="wrapper">
-      <h2 class="cart__item-title">Описание товара</h2>
+      <h2 class="cart__item-title">{{ cart_item.name }}</h2>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: {},
+  name: "CartItem",
+  props: {
+    cart_item: {
+      type: Object,
+      default() {
+        return {};
+      },
+    },
+  },
 };
 </script>
 

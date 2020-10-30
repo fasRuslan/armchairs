@@ -21,7 +21,14 @@
             <a class="nav__item-link">Отзывы</a>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link">Контакты</a>
+            <a class="nav__item-link">
+              <router-link
+                :to="{ name: 'Cart', params: { cart_data: CART } }"
+                class="nav__item-link"
+              >
+                Корзина
+              </router-link>
+            </a>
           </li>
         </ul>
       </nav>
@@ -33,6 +40,8 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "Header",
   data() {
@@ -65,6 +74,9 @@ export default {
     };
   },
   methods: {},
+  computed: {
+    ...mapGetters(["CART"]),
+  },
 };
 </script>
 

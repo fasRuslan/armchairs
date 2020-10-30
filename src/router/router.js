@@ -35,12 +35,6 @@ let router = new Router({
             component: ProductDetail,
             props: true,
         },
-         {
-            path: '/Catalog/:link',
-            name: 'Cart',
-            component: Cart,
-            props: true,
-        },
         {
             path: '/order',
             name: 'Order',

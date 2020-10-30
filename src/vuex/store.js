@@ -14,10 +14,24 @@ let store = new Vuex.Store({
         SET_PRODUCT_TO_STATE: (state, products) => {
             state.products = products;
         },
+        SET_CART:(state, product) => {
+            let isProduct = false;
+            state.cart.map(function(item){
+                if (item.article === product.article) {
+                 isProduct = true;
+                 item.quantity++;   
+                }
+            });
+             isProduct || state.cart.push({...product,quantity:1})
+
+        }
     },
     actions:{
+        ADD_TO_CART({commit}, product){
+            commit("SET_CART", product) 
+        },
         GET_PRODUCTS({commit}) {
-            return axios('http://localhost:3000/products', {
+            return axios('http://www.json-generator.com/api/json/get/cegvxXyWXm?indent=2', {
                 method: "GET"
             })
                 .then((products) => {
@@ -34,7 +48,10 @@ let store = new Vuex.Store({
         PRODUCTS(state) {
             return state.products
         },
+        CART(state){
+            return state.cart;
+        },
     }
-})
+});
 
 export default store;

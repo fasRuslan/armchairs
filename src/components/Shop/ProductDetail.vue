@@ -1,12 +1,12 @@
 <template>
   <section class="product-detail">
-    <div class="wrapper">
-      <h2 class="product-detail__title">Name</h2>
+    <div class="wrapper" v-for="product in products" :key="product.article">
+      <h2 class="product-detail__title">{{ product.name }}</h2>
       <div
         class="product-detail__content d-flex justify-content-between align-items-start"
       >
         <div class="product-detail__content-img">
-          <img src="/img/shop/catalogitem/1.png" alt="" />
+          <img :src="'/img/shop/catalogitem/' + product.image" alt="" />
         </div>
         <div class="product-detail__content-text">
           <h3 class="product-detail__content-text__title">Описание товара</h3>
@@ -17,7 +17,7 @@
             magni!
           </div>
           <button class="product-detail__content-text__button">
-            В корзину
+            Добавить в корзину
           </button>
         </div>
       </div>
@@ -26,8 +26,32 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
+
 export default {
   name: "ProductDetail",
+  data() {
+    return {
+      products: [],
+    };
+  },
+  computed: {
+    ...mapGetters(["PRODUCTS"]),
+  },
+  methods: {
+    ...mapActions(["GET_PRODUCTS"]),
+  },
+  created() {
+    let self = this;
+    this.GET_PRODUCTS().then((response) => {
+      if (response.data) {
+        this.products = [...this.PRODUCTS];
+        this.products = this.products.filter(function (item) {
+          return item.link == self.$route.params.link;
+        });
+      }
+    });
+  },
 };
 </script>
 
