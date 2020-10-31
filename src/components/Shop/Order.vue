@@ -17,20 +17,22 @@
               <div class="order__items"
                    v-for="(item, index) in cart_data"
                    :key="index">
-                <div class="order__item">
-                  <div class="order__item-title">
-                    "{{item.name}}"
-                  </div>
-                  <div>
-                    Кол-во: {{item.quantity}} шт.
-                  </div>
-                  <span v-if="item.isSale">
-                                        Сумма: {{item.priceSale * item.quantity}} ₽
-                                    </span>
-                  <span v-else>
-                                        Сумма: {{item.price * item.quantity}} ₽
-                                    </span>
-                </div>
+                <table class="table table-striped order__item">
+                  <tr>
+                    <td class="order__item-title">
+                      {{item.article}}
+                    </td>
+                    <td class="order__item-title">
+                      "{{item.name}}"
+                    </td>
+                    <td>
+                      Кол-во: {{item.quantity}} шт.
+                    </td>
+                    <td>
+                      Сумма: {{item.price * item.quantity}} ₽
+                    </td>
+                  </tr>
+                </table>
               </div>
             </div>
             <h3 class="order__form-title">
@@ -211,6 +213,13 @@
 
 <style lang="scss">
   .order {
-
+    .btn {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      background-color: #FFF501;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
   }
 </style>

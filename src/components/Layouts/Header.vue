@@ -1,6 +1,6 @@
 <template>
   <section class="header">
-    <div class="wrapper d-flex justify-content-between">
+    <div class="wrapper d-flex justify-content-between align-items-center">
       <div class="logo">logo</div>
       <nav class="nav">
         <ul class="nav__list d-flex justify-content-between align-items-center">
@@ -21,8 +21,7 @@
             <a class="nav__item-link">Отзывы</a>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link">
-              <router-link class="main-header__cart-link"
+              <router-link class="nav__item__cart-link"
                            :to="{name: 'Cart', params: {cart_data: CART}}">
                 <div class="catalog__cart">
                   <div class="catalog__cart-icon">
@@ -33,7 +32,6 @@
                   </span>
                 </div>
               </router-link>
-            </a>
           </li>
         </ul>
       </nav>
@@ -102,14 +100,31 @@ export default {
   }
   .nav__list {
     width: 100%;
+    margin-bottom: 0;
   }
   .nav__item {
+    position: relative;
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .catalog__cart {
+    position: relative;
+    &-count {
+      position: absolute;
+      bottom: 0;
+      right: -10px;
+    }
   }
   .nav__item-link {
   }
   .tel {
     width: 15%;
     text-align: center;
+    margin-left: 50px;
   }
   .tel__link {
     color: black;
