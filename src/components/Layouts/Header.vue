@@ -15,10 +15,14 @@
             </router-link>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link">О компании</a>
+            <router-link :to="{ path: '/', hash: '#about'}" class="nav__item-link">
+              О компании
+            </router-link>
           </li>
           <li class="nav__item">
-            <a class="nav__item-link">Отзывы</a>
+            <router-link :to="{ path: '/', hash: '#reviews' }" class="nav__item-link">
+              Отзывы
+            </router-link>
           </li>
           <li class="nav__item">
               <router-link class="nav__item__cart-link"

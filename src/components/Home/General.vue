@@ -7,8 +7,10 @@
           Ваш рабочий процесс будет <br />
           обеспечен комфортом и <br />продуктивностью
         </p>
-        <button class="general__popup">Оставить заявку</button>
-        <Form />
+        <button class="general__popup modal-link" v-b-modal.modal-1>Оставить заявку</button>
+        <b-modal id="modal-1" centered hide-footer title="Заказть звонок">
+          <Form />
+        </b-modal>
       </div>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <template>
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="wrapper">
       <h2 class="reviews__title">Отзывы наших довольных клиентов</h2>
       <template v-if="reviewsList.length > 0">
