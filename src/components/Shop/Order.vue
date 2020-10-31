@@ -1,90 +1,80 @@
 <template>
   <section class="order">
-    <div class="container" v-if="cart_data.length">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 class="title">
-            Оформление заказа
-          </h1>
-        </div>
-        <div class="col-sm-12">
-          <div class="error" v-if="validation.hasError() === true">Проверьте правильность заполнения полей!</div>
-          <form class="order__form" @submit.prevent="submit">
-            <h3 class="order__form-title">
-              Ваш заказ
-            </h3>
-            <div class="form-group">
-              <div class="order__items"
-                   v-for="(item, index) in cart_data"
-                   :key="index">
-                <table class="table table-striped order__item">
-                  <tr>
-                    <td class="order__item-title">
-                      {{item.article}}
-                    </td>
-                    <td class="order__item-title">
-                      "{{item.name}}"
-                    </td>
-                    <td>
-                      Кол-во: {{item.quantity}} шт.
-                    </td>
-                    <td>
-                      Сумма: {{item.price * item.quantity}} ₽
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <h3 class="order__form-title">
-              Контактная информация
-            </h3>
-            <div class="form-group">
-              <div class="form-row">
-                <input class="form-control" type="text" placeholder="Имя" v-model="name" name="name">
-                <div class="message">{{ validation.firstError('name') }}</div>
-              </div>
-              <div class="form-row">
-                <input class="form-control" type="tel" placeholder="+7 (___) ___-__-__" v-model="phone" v-mask="'+7 (###) ###-##-##'" name="phone">
-                <div class="message">{{ validation.firstError('phone') }}</div>
-              </div>
-              <div class="form-row">
-                <input class="form-control" type="email" placeholder="Email" v-model="email" name="email">
-                <div class="message">{{ validation.firstError('email') }}</div>
-              </div>
-            </div>
-            <h3 class="order__form-title">
-              Доставка
-            </h3>
-            <div class="form-group">
-              <div class="form-row">
-                <input type="text" placeholder="Индекс" class="form-control" v-model="ind" v-mask="'######'" name="ind">
-                <div class="message">{{ validation.firstError('ind') }}</div>
-              </div>
-              <div class="form-row">
-                <input type="text" placeholder="Город" class="form-control" v-model="city" name="city">
-                <div class="message">{{ validation.firstError('city') }}</div>
-              </div>
-              <div class="form-row">
-                <input type="text" placeholder="Улица, дом, квартира" class="form-control" v-model="address" name="address">
-                <div class="message">{{ validation.firstError('address') }}</div>
-              </div>
-            </div>
-            <div class="order__total">
-              <h3 class="order__form-title">
-                Итого к оплате: {{cartTotal}} ₽
-              </h3>
-              <input type="hidden" :value="cartTotal" name="total">
-            </div>
-            <div class="form-group">
-              <button class="btn" type="submit">
-                Оформить заказ
-              </button>
-            </div>
-          </form>
-          <div>
-            {{message}}
+    <div class="wrapper" v-if="cart_data.length">
+      <h1 class="title mb-5">
+        Оформление заказа
+      </h1>
+      <div class="error" v-if="validation.hasError() === true">Проверьте правильность заполнения полей!</div>
+      <form class="order__form" @submit.prevent="submit">
+        <h3 class="order__form-title">
+          Ваш заказ
+        </h3>
+        <div class="form-group">
+          <div class="order__items"
+               v-for="(item, index) in cart_data"
+               :key="index">
+            <table class="table table-striped order__item">
+              <tr>
+                <td class="order__item-title">
+                  {{item.article}}
+                </td>
+                <td class="order__item-title">
+                  "{{item.name}}"
+                </td>
+                <td>
+                  Кол-во: {{item.quantity}} шт.
+                </td>
+                <td>
+                  Сумма: {{item.price * item.quantity}} ₽
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
+        <h3 class="order__form-title">
+          Контактная информация
+        </h3>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя" v-model="name" name="name">
+          <div class="message">{{ validation.firstError('name') }}</div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="tel" placeholder="+7 (___) ___-__-__" v-model="phone" v-mask="'+7 (###) ###-##-##'" name="phone">
+          <div class="message">{{ validation.firstError('phone') }}</div>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="email" placeholder="Email" v-model="email" name="email">
+          <div class="message">{{ validation.firstError('email') }}</div>
+        </div>
+        <h3 class="order__form-title">
+          Доставка
+        </h3>
+        <div class="form-group">
+          <input type="text" placeholder="Индекс" class="form-control" v-model="ind" v-mask="'######'" name="ind">
+          <div class="message">{{ validation.firstError('ind') }}</div>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Город" class="form-control" v-model="city" name="city">
+          <div class="message">{{ validation.firstError('city') }}</div>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Улица, дом, квартира" class="form-control" v-model="address" name="address">
+          <div class="message">{{ validation.firstError('address') }}</div>
+        </div>
+        <div class="order__total">
+          <h3 class="order__form-title">
+            Итого к оплате: {{cartTotal}} ₽
+          </h3>
+          <input type="hidden" :value="cartTotal" name="total">
+        </div>
+        <div class="form-group">
+          <button class="btn" type="submit">
+            Оформить заказ
+          </button>
+        </div>
+      </form>
+      <div>
+        {{message}}
       </div>
     </div>
   </section>
