@@ -15,27 +15,35 @@
             </router-link>
           </li>
           <li class="nav__item">
-            <router-link :to="{ path: '/', hash: '#about'}" class="nav__item-link">
+            <router-link
+              :to="{ path: '/', hash: '#about' }"
+              class="nav__item-link"
+            >
               О компании
             </router-link>
           </li>
           <li class="nav__item">
-            <router-link :to="{ path: '/', hash: '#reviews' }" class="nav__item-link">
+            <router-link
+              :to="{ path: '/', hash: '#reviews' }"
+              class="nav__item-link"
+            >
               Отзывы
             </router-link>
           </li>
           <li class="nav__item">
-              <router-link class="nav__item__cart-link"
-                           :to="{name: 'Cart', params: {cart_data: CART}}">
-                <div class="catalog__cart">
-                  <div class="catalog__cart-icon">
-                    <img src="/img/ic-cart.svg" width="40">
-                  </div>
-                  <span class="catalog__cart-count">
-                    {{CART.reduce((s, i) => s = s + i.quantity, 0)}}
-                  </span>
+            <router-link
+              class="nav__item__cart-link"
+              :to="{ name: 'Cart', params: { cart_data: CART } }"
+            >
+              <div class="catalog__cart">
+                <div class="catalog__cart-icon">
+                  <img src="/img/ic-cart.svg" width="40" />
                 </div>
-              </router-link>
+                <span class="catalog__cart-count">
+                  {{ CART.reduce((s, i) => (s = s + i.quantity), 0) }}
+                </span>
+              </div>
+            </router-link>
           </li>
         </ul>
       </nav>
