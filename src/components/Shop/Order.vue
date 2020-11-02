@@ -10,28 +10,25 @@
           Ваш заказ
         </h3>
         <div class="form-group">
-          <div class="order__items"
-               v-for="(item, index) in cart_data"
-               :key="index">
-            <table class="table table-striped order__item">
-              <tbody>
-                <tr>
-                  <td class="order__item-title">
-                    {{item.article}}
-                  </td>
-                  <td class="order__item-title">
-                    "{{item.name}}"
-                  </td>
-                  <td>
-                    Кол-во: {{item.quantity}} шт.
-                  </td>
-                  <td>
-                    Сумма: {{item.price * item.quantity}} ₽
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table class="table table-striped order__item">
+            <tbody>
+            <tr v-for="(item, index) in cart_data"
+                :key="index">
+              <td class="order__item-title">
+                {{item.article}}
+              </td>
+              <td class="order__item-title">
+                "{{item.name}}"
+              </td>
+              <td>
+                Кол-во: {{item.quantity}} шт.
+              </td>
+              <td>
+                Сумма: {{item.price * item.quantity}} ₽
+              </td>
+            </tr>
+            </tbody>
+          </table>
         </div>
         <h3 class="order__form-title">
           Контактная информация

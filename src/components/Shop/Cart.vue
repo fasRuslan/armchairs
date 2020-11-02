@@ -44,7 +44,7 @@
           </table>
         </div>
         <router-link
-                class="btn btn--order"
+                class="btn--order"
                 :to="{ name: 'Order' }"
         >
           Оформить заказ
@@ -97,6 +97,7 @@ export default {
 </script>
 
 <style lang="scss">
+.cart {
   .table {
     margin: 40px 0;
   }
@@ -108,4 +109,5 @@ export default {
     padding: 10px 20px;
     cursor: pointer;
   }
+}
 </style>
