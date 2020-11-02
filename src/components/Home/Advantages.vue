@@ -27,22 +27,22 @@ export default {
         {
           title: "ДОГЛОВЕЧНОСТЬ",
           subtitle:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "Мы используем первоклассную экокожу максимально повышенной плотности. Наш материал обладает высокой устойчивостью к истиранию - более 50 000 циклов, что на 40% выше более дешевых аналогов. ",
         },
         {
           title: "ПРАКТИЧНОСТЬ",
           subtitle:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "Безопасный гипоаллергенный материал, обладает высокой устойчивостью к многократному изгибу (более 200 000 циклов), к истираемости и сопротивляемостью к царапинам.",
         },
         {
           title: "ВНИМАНИЕ К МЕЛОЧАМ",
           subtitle:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "При производстве комплектующих мы используем не обычное напыление, а гальваническое покрытие, что обеспечивает сохранность эстетического вида на долгие годы.",
         },
         {
           title: "МАКСИМАЛЬНЫЙ КОМФОРТ",
           subtitle:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            "Полиуретановое покрытие является основным фактором мягкости и сверхпрочности, а также делает Ваше кресло прятным на ощупь и лёгким в эксплуатации и уходе",
         },
       ],
       advantagesPicture: "/img/advantages/armchair.png",

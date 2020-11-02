@@ -21,7 +21,6 @@
         <span class="cart-item__qty-btn" @click="decrement">-</span>
         <span class="cart-item__qty">{{ cart_item.quantity }}</span>
         <span class="cart-item__qty-btn" @click="increment">+</span>
-        =======
         <button class="btn cart-item__qty-btn" @click="decrement">-</button>
         <span class="cart-item__qty">{{ cart_item.quantity }}</span>
         <button class="btn cart-item__qty-btn" @click="increment">+</button>

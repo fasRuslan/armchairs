@@ -5,8 +5,7 @@
         Каталог продукции офисных кресел
       </h2>
       <p class="services__subtitle text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        В наличии более 300 различных цветов. Узнавайте подробности у менеджеров
       </p>
       <ul
         class="services__list d-flex justify-content-between align-items-center"
