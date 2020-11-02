@@ -16,7 +16,7 @@
             fugiat officiis recusandae officia, tenetur, amet ab a! Rem non et
             magni!
           </div>
-          <button class="product-detail__content-text__button">
+          <button class="product-detail__content-text__button" @click="addCart(product)">
             Добавить в корзину
           </button>
         </div>
@@ -42,9 +42,11 @@ export default {
     ...mapActions([
       'ADD_CART',
       'GET_PRODUCTS',
+      'ADD_TO_CART'
     ]),
-    addCart() {
-      this.ADD_CART(this.products[0]);
+    addCart(product) {
+      console.log(product);
+      this.ADD_TO_CART(product);
     },
   },
   created() {
