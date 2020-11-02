@@ -12,7 +12,11 @@
                 {{ slide.title }}
               </h3>
 
-              <img v-bind:src="slide.img" alt="" />
+              <img
+                v-bind:src="slide.img"
+                alt=""
+                class="reviews__slider-person"
+              />
 
               <p class="slider__description">
                 {{ slide.description }}
@@ -38,26 +42,24 @@ export default {
         {
           img: "/img/rewiews/person.png",
           title: "Дмитрий Рогалев",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          description: "Заказываю не первый раз, все оперативно и быстро",
         },
         {
-          img: "/img/rewiews/person.png",
-          title: "Дмитрий Рогалев",
+          img: "/img/rewiews/2.jpg",
+          title: "Татьяна Науменко",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Долго сомневалась, потому что много китайского не качественного барахла. Была приятно удивлена качеством",
         },
         {
-          img: "/img/rewiews/person.png",
-          title: "Дмитрий Рогалев",
+          img: "/img/rewiews/3.jpg",
+          title: "Артем Лебедев",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Заказываю не первый раз, при повторном обращении скидка.",
         },
         {
-          img: "/img/rewiews/person.png",
-          title: "Дмитрий Рогалев",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          img: "/img/rewiews/4.jpg",
+          title: "Анна Авакова",
+          description: "Подошли к вопросу очень внимательно",
         },
       ],
       sliderOpt: {
@@ -79,6 +81,11 @@ export default {
   }
 
   &__slider-content {
+  }
+  .reviews__slider-person {
+    display: block;
+    width: 100px;
+    height: 100px;
   }
   .slider {
     &__title {

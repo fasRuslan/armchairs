@@ -18,7 +18,7 @@ export default {
     return {
       aboutTitle: "О компании",
       aboutSubtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate",
+        "Мы поставили наши кресла более чем 500 организациям. Среди них государственные учреждения, представители малого, среднего и крупного бизнеса. С некоторыми мы сотрудничаем уже более 15 лет.",
     };
   },
 };

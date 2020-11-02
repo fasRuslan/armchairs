@@ -38,6 +38,7 @@ export default {
   methods: {
     sendDataToParent() {
       this.$emit("sendarticle", this.product);
+      this.$emit("sendarticle", this.product);
     },
   },
 };
