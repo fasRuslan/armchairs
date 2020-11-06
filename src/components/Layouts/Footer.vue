@@ -6,20 +6,37 @@
       <div class="d-flex justify-content-between align-items-center">
         <div class="footer__content col-4">
           <ul class="footer__contact-list">
-            <li
-              class="footer__contact-item d-flex align-items-center"
-              v-for="(contactItem, index) in footerContactList"
-              :key="index"
-            >
+            <li class="footer__contact-item d-flex align-items-center">
               <div class="footer__contact-item-icon">
-                <img v-bind:src="contactItem.icon" alt="" />
+                <img src="/img/footer/geo.svg" alt="" />
               </div>
               <div class="footer__content-item-text">
-                <p class="footer__contact-item-title">
-                  {{ contactItem.title }}
-                </p>
+                <p class="footer__contact-item-title">г.Москва</p>
                 <p class="footer__contact-item-subtitle">
-                  {{ contactItem.subtitle }}
+                  Колодезный переулок д3
+                </p>
+              </div>
+            </li>
+            <li class="footer__contact-item d-flex align-items-center">
+              <div class="footer__contact-item-icon">
+                <img src="/img/footer/tel.svg" alt="" />
+              </div>
+              <div class="footer__content-item-text">
+                <p class="footer__contact-item-title">Время работы</p>
+                <p class="footer__contact-item-subtitle">
+                  пн-пт 9:00-19:00, <br />
+                  суббота 9:00-18:00
+                </p>
+              </div>
+            </li>
+            <li class="footer__contact-item d-flex align-items-center">
+              <div class="footer__contact-item-icon">
+                <img src="/img/footer/time.svg" alt="" />
+              </div>
+              <div class="footer__content-item-text">
+                <p class="footer__contact-item-title">Связь</p>
+                <p class="footer__contact-item-subtitle">
+                  <a href="tel:+79268818059">+7(926)8818059</a>
                 </p>
               </div>
             </li>
@@ -80,17 +97,17 @@ export default {
         {
           icon: "/img/footer/geo.svg",
           title: "г.Москва",
-          subtitle: "ул. Пушкина",
+          subtitle: " Колодезный переулок д3",
         },
         {
           icon: "/img/footer/tel.svg",
           title: "Время работы",
-          subtitle: "c 10 00 до 20 00",
+          subtitle: "пн-пт 9:00-19:00, суббота 9:00-18:00",
         },
         {
           icon: "/img/footer/time.svg",
           title: "Связь",
-          subtitle: "7(999) 999-99-99",
+          subtitle: "+7(926)8818059",
         },
       ],
       footerSocialTitle: "Наши соц.сети:",

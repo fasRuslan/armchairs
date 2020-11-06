@@ -75,7 +75,7 @@ let store = new Vuex.Store({
             commit('CLEAR')
         },
         GET_PRODUCTS({commit}) {
-            return axios('http://www.json-generator.com/api/json/get/cegvxXyWXm?indent=2', {
+            return axios('http://www.json-generator.com/api/json/get/cgjLNmzStK?indent=2', {
                 method: "GET"
             })
                 .then((products) => {

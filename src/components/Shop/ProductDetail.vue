@@ -11,12 +11,12 @@
         <div class="product-detail__content-text">
           <h3 class="product-detail__content-text__title">Описание товара</h3>
           <div class="product-detail__content-text__description">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-            quia tempore laudantium alias repellat in totam possimus dolore
-            fugiat officiis recusandae officia, tenetur, amet ab a! Rem non et
-            magni!
+            {{ product.description }}
           </div>
-          <button class="product-detail__content-text__button" @click="addCart(product)">
+          <button
+            class="product-detail__content-text__button"
+            @click="addCart(product)"
+          >
             Добавить в корзину
           </button>
         </div>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-  import {mapActions, mapGetters} from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "ProductDetail",
@@ -39,11 +39,7 @@ export default {
     ...mapGetters(["PRODUCTS"]),
   },
   methods: {
-    ...mapActions([
-      'ADD_CART',
-      'GET_PRODUCTS',
-      'ADD_TO_CART'
-    ]),
+    ...mapActions(["ADD_CART", "GET_PRODUCTS", "ADD_TO_CART"]),
     addCart(product) {
       console.log(product);
       this.ADD_TO_CART(product);

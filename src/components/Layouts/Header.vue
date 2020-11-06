@@ -1,7 +1,7 @@
 <template>
   <section class="header">
     <div class="wrapper d-flex justify-content-between align-items-center">
-      <div class="logo">logo</div>
+      <div class="logo">Кресла</div>
       <nav class="nav">
         <ul class="nav__list d-flex justify-content-between align-items-center">
           <li class="nav__item">
@@ -48,7 +48,7 @@
         </ul>
       </nav>
       <div class="tel">
-        <a href="tel:+79999999999" class="tel__link">+7(999)9999999</a>
+        <a href="tel:+79268818059" class="tel__link">+7(926)8818059</a>
       </div>
     </div>
   </section>

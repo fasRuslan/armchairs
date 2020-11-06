@@ -15,19 +15,19 @@
           v-for="(serviceItem, index) in services__list"
           :key="index"
         >
-          <a href="#" class="services__item-link">
-            <img
-              class="service__item-link-img"
-              v-bind:src="serviceItem.img"
-              alt=""
-            />
-            <p class="service__item-link-title">{{ serviceItem.title }}</p>
-            <p class="service__item-link-price">{{ serviceItem.price }}</p>
+          <a href="#" class="services__item-link text-center">
             <router-link
               :to="{ name: 'Catalog' }"
               class="service__item-link-button"
             >
-              {{ serviceItem.button }}
+              <img
+                class="service__item-link-img"
+                v-bind:src="serviceItem.img"
+                alt=""
+              />
+              <p class="service__item-link-title">{{ serviceItem.title }}</p>
+              <p class="service__item-link-price">{{ serviceItem.price }}</p>
+              <button class="">{{ serviceItem.button }}</button>
             </router-link>
           </a>
         </li>
@@ -43,21 +43,21 @@ export default {
     return {
       services__list: [
         {
-          img: "/img/general__catalog/1.png",
-          title: "Сенатор-1",
-          price: "5 350 руб.",
+          img: "/img/service/nadir.jpeg",
+          title: "Надир",
+          price: "16 000 руб.",
           button: "Перейти в каталог",
         },
         {
-          img: "/img/general__catalog/2.png",
-          title: "Менеджер-1",
-          price: "5 100 руб.",
+          img: "/img/service/atlant1.jpeg",
+          title: "Атлант",
+          price: "15 900 руб",
           button: "Перейти в каталог",
         },
         {
-          img: "/img/general__catalog/3.png",
-          title: "Ральф",
-          price: "3 900 руб.",
+          img: "/img/service/patrick1.jpeg",
+          title: "Patrick",
+          price: "16 950 руб",
           button: "Перейти в каталог",
         },
       ],

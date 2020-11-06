@@ -24,7 +24,7 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
 $mail->setFrom('zayavka_sayt@mail.ru');
-$mail->addAddress('digital@studio-elements.ru');
+$mail->addAddress('gardistyl@gmail.com');
 $mail->isHTML(true);
 
 $mail->Subject = 'Заявка с сайта';
@@ -44,16 +44,16 @@ $htmlBody = '
                 <tr>
                     <td>
                         <div>
-                            Имя клиента: '.$name.'
+                            Имя клиента: ' . $name . '
                         </div>
                         <div>
-                            Телефон клиента: '.$phone.'
+                            Телефон клиента: ' . $phone . '
                         </div>
                         <div>
-                            E-mail клиента: '.$email.'
+                            E-mail клиента: ' . $email . '
                         </div>
                         <div>
-                            Адрес: '.$ind . $city . $address.'
+                            Адрес: ' . $ind . $city . $address . '
                         </span>
                     </td>
                 </tr>';
@@ -62,16 +62,16 @@ foreach ($cart as $item) :
                 <tr>
                     <td>
                         <span style="display:inline-block; width:300px;">
-                            Артикул: '.$item["article"].'
+                            Артикул: ' . $item["article"] . '
                         </span>
                         <span style="display:inline-block; width:300px;">
-                            Название товара: '.$item["name"].'
+                            Название товара: ' . $item["name"] . '
                         </span>
                         <span style="display:inline-block; width:300px;">
-                            Количество: '.$item["quantity"].'
+                            Количество: ' . $item["quantity"] . '
                         </span>
                         <span style="display:inline-block; width:300px;">
-                            Цена: '.$item["price"].'
+                            Цена: ' . $item["price"] . '
                         </span>
                     </td>
                 </tr>';
@@ -79,7 +79,7 @@ endforeach;
 $htmlBody .= '<tr>
                     <td>
                         <span style="display:inline-block; width:300px;">
-                            Cумма заказа: '.$cartTotal.'
+                            Cумма заказа: ' . $cartTotal . '
                         </span>
                     </td>
                 </tr>
@@ -99,5 +99,5 @@ $mail->AltBody = '';
 if (!$mail->send()) {
     echo 'Возникла ошибка, попробуйте еще раз';
 } else {
-    echo 'Спасибо, '. $name . '! Ваш заказ принят. Мы скоро свяжемся с Вами!';
+    echo 'Спасибо, ' . $name . '! Ваш заказ принят. Мы скоро свяжемся с Вами!';
 }

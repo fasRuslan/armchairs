@@ -18,16 +18,16 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
 $mail->setFrom('zayavka_sayt@mail.ru');
-$mail->addAddress('digital@studio-elements.ru');
+$mail->addAddress('gardistyl@gmail.com');
 $mail->isHTML(false);
 
 $mail->Subject = 'Заявка с сайта';
 
 $mail->Body = $htmlBody;
-$mail->AltBody = $name. 'оставил заявку. Номер телефона - ' .$tel;
+$mail->AltBody = $name . 'оставил заявку. Номер телефона - ' . $tel;
 
 if (!$mail->send()) {
     echo 'Возникла ошибка, попробуйте еще раз';
 } else {
-    echo 'Спасибо, '. $name . '! Мы скоро свяжемся с Вами!';
+    echo 'Спасибо, ' . $name . '! Мы скоро свяжемся с Вами!';
 }

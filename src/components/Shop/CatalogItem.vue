@@ -1,6 +1,6 @@
 <template>
   <div
-    class="catalog-item d-flex flex-column justify-content-between align-items-center"
+    class="catalog-item d-flex flex-column justify-content-around align-items-center text-center"
   >
     <router-link
       :to="{ name: 'ProductDetail', params: { link: product.link } }"
@@ -12,8 +12,9 @@
           alt=""
         />
       </div>
+
       <h4 class="catalog-item__name">{{ product.name }}</h4>
-      <p class="catalog-item__price">Цена:{{ product.price }}р.</p>
+      <p class="catalog-item__price">Цена: {{ product.price }}р.</p>
     </router-link>
     <button class="catalog-item__add-to-card-button" @click="sendDataToParent">
       Добавить в корзину
@@ -52,8 +53,9 @@ export default {
   border: 1px solid #aeaeae;
   border-radius: 20px;
   &__name {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: normal;
+    margin-bottom: 20px;
     color: black;
   }
 
