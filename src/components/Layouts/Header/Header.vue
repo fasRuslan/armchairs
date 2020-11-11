@@ -3,7 +3,7 @@
     <div class="wrapper d-flex justify-content-between align-items-center">
       <div class="logo">Кресла</div>
       <nav class="nav">
-        <ul class="nav__list d-flex justify-content-between align-items-center">
+        <ul class="nav__list d-flex justify-content-around align-items-center">
           <li class="nav__item">
             <router-link :to="{ name: 'Home' }" class="nav__item-link">
               Главная
@@ -30,23 +30,24 @@
               Отзывы
             </router-link>
           </li>
-          <li class="nav__item">
-            <router-link
-              class="nav__item__cart-link"
-              :to="{ name: 'Cart', params: { cart_data: CART } }"
-            >
-              <div class="catalog__cart">
-                <div class="catalog__cart-icon">
-                  <img src="/img/ic-cart.svg" width="40" />
-                </div>
-                <span class="catalog__cart-count">
-                  {{ CART.reduce((s, i) => (s = s + i.quantity), 0) }}
-                </span>
-              </div>
-            </router-link>
-          </li>
         </ul>
       </nav>
+      <MobileMenu />
+      <div class="nav__item">
+        <router-link
+          class="nav__item__cart-link"
+          :to="{ name: 'Cart', params: { cart_data: CART } }"
+        >
+          <div class="catalog__cart">
+            <div class="catalog__cart-icon">
+              <img src="/img/ic-cart.svg" width="40" />
+            </div>
+            <span class="catalog__cart-count">
+              {{ CART.reduce((s, i) => (s = s + i.quantity), 0) }}
+            </span>
+          </div>
+        </router-link>
+      </div>
       <div class="tel">
         <a href="tel:+79268818059" class="tel__link">+7(926)8818059</a>
       </div>
@@ -56,9 +57,13 @@
 
 <script>
 import { mapGetters } from "vuex";
+import MobileMenu from "./MobileMenu.vue";
 
 export default {
   name: "Header",
+  components: {
+    MobileMenu,
+  },
   data() {
     return {
       menu: [
@@ -140,6 +145,15 @@ export default {
   }
   .tel__link {
     color: black;
+  }
+  .header__burger {
+    width: 30px;
+    span {
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      display: block;
+    }
   }
 }
 </style>

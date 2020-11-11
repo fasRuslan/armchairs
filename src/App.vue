@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Header from "./components/Layouts/Header.vue";
+import Header from "./components/Layouts/Header/Header.vue";
 import Main from "./components/Layouts/Main.vue";
 import Footer from "./components/Layouts/Footer.vue";
 
