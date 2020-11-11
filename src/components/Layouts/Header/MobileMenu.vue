@@ -54,13 +54,13 @@ export default {
 
 <style lang="scss">
 .nav-menu__list {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   z-index: 21;
   width: 100%;
   max-width: 500px;
-  background-color: #121212;
+  background-color: white;
   transition: all 0.5s ease-in-out;
   &--close {
     display: none;
@@ -76,7 +76,7 @@ export default {
   width: 35px;
   height: 20px;
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 30px;
   z-index: 99;

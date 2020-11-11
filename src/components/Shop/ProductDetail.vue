@@ -13,6 +13,66 @@
           <div class="product-detail__content-text__description">
             {{ product.description }}
           </div>
+          <h3 class="product-detail__content-text__title">
+            Характеристики товара
+          </h3>
+          <div class="product-detail__content-text__description">
+            <p>
+              Соединительный узел:{{ product.specifications.connectorAssembly }}
+            </p>
+            <p>
+              Максимальная нагрузка :{{ product.specifications.maximumLoad }}
+            </p>
+            <p>Ширина кресла :{{ product.specifications.widthChair }}</p>
+            <p>Глубина кресла :{{ product.specifications.depthChair }}</p>
+            <p>
+              Высота поднятого кресла :{{
+                product.specifications.heightRaisedChair
+              }}
+            </p>
+            <p>
+              Высота опущенного кресла :{{
+                product.specifications.heightLoweredChair
+              }}
+            </p>
+            <p>Ширина сиденья :{{ product.specifications.seatWidth }}</p>
+            <p>Глубина сиденья :{{ product.specifications.seatDeth }}</p>
+            <p>
+              Высота поднятого сиденья :{{
+                product.specifications.heightRaisedSeat
+              }}
+            </p>
+            <p>
+              Высота опущенного сиденья :{{
+                product.specifications.loweredSeatHeight
+              }}
+            </p>
+            <p>Высота спинки :{{ product.specifications.backHeight }}</p>
+            <p>
+              Материал обивки :{{ product.specifications.upholsteryMaterial }}
+            </p>
+            <p>Подголовник :{{ product.specifications.headrest }}</p>
+            <p>Тип роликов :{{ product.specifications.typeOfVideos }}</p>
+            <p>Подлокотники :{{ product.specifications.armrests }}</p>
+            <p>
+              Механизм качания :{{ product.specifications.tiltingMechanism }}
+            </p>
+            <p>
+              Тип механизма качания :{{
+                product.specifications.typeTiltingMechanism
+              }}
+            </p>
+            <p>
+              Регулировка высоты сиденья :{{
+                product.specifications.seatHeightAdjusment
+              }}
+            </p>
+            <p>Поясничный упор :{{ product.specifications.lumbarSupport }}</p>
+            <p>
+              Гарантия производителя :{{ product.specifications.guarantee }}
+            </p>
+            <p>Материал каркаса :{{ product.specifications.material }}</p>
+          </div>
           <button
             class="product-detail__content-text__button"
             @click="addCart(product)"
