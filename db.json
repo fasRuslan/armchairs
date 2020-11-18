@@ -1,6 +1,34 @@
 [
     {
         "image": "1.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Ральф",
         "price": "3 900.00",
         "article": "T1",
@@ -25,17 +53,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "2.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Менеджер-1",
         "price": "5 100.00",
         "article": "T2",
@@ -44,34 +98,88 @@
         "description": "Визит - качественное и доступное по цене, а главное - универсальное. Его можно использовать и в качестве кресла для сотрудников, и для дома. Благодаря скромным габаритам, достаточно комфортное, оно не займет много места",
         "link": "senator2",
         "specifications": {
-            "connectorAssembly": "Пиастра",
-            "maximumLoad": "80 кг",
-            "widthChair": "59 см",
-            "depthChair": "53 см",
-            "heightRaisedChair": "106 см",
-            "heightLoweredChair": "91,5 см",
-            "seatWidth": "49 см",
-            "seatDeth": "41 см",
-            "heightRaisedSeat": "59 см",
-            "loweredSeatHeight": "45 см",
-            "backHeight": "51 см",
+            "connectorAssembly": "Топ-ган",
+            "maximumLoad": "120 кг",
+            "widthChair": "57 см",
+            "depthChair": "73 см",
+            "heightRaisedChair": "122 см",
+            "heightLoweredChair": "109 см",
+            "seatWidth": "47 см",
+            "seatDeth": "48 см",
+            "heightRaisedSeat": "61 см",
+            "loweredSeatHeight": "49 см",
+            "backHeight": "68 см",
             "upholsteryMaterial": "Экокожа",
-            "headrest": "нет",
+            "headrest": "Да",
             "typeOfVideos": "Жесткий",
             "armrests": "да",
-            "tiltingMechanism": "нет",
-            "armrests": "да",
+            "tiltingMechanism": "Да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
-            "lumbarSupport": "да",
+            "lumbarSupport": "Нет",
             "guarantee": "да",
-            "lumbarSupport": "да",
-            "material": "Пластик/фанера"
+            "material": "Фанера монолит толщина 18 мм"
         }
     },
     {
         "image": "3.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Сенатор-1",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "price": "5 350.00",
         "article": "T3",
         "available": true,
@@ -95,17 +203,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "4.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Джокер",
         "price": "5 750.00",
         "article": "T4",
@@ -130,17 +264,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "5.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Атлант-1",
         "price": "5 900.00",
         "article": "T5",
@@ -165,17 +325,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "6.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Надир-1",
         "price": "6 000.00",
         "article": "T6",
@@ -200,17 +386,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "7.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Слим",
         "price": "6 000.00",
         "article": "T7",
@@ -235,17 +447,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "8.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Buro",
         "price": "6 000.00",
         "article": "T8",
@@ -270,18 +508,72 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "9.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Patrick 1",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "price": "6 200.00",
         "article": "T9",
         "available": true,
@@ -305,17 +597,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "10.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Бостон",
         "price": "6 500.00",
         "article": "T10",
@@ -340,17 +658,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "11.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Импульс-1",
         "price": "6 900.00",
         "article": "T11",
@@ -375,17 +719,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "12.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Пегас-1",
         "price": "6 950.00",
         "article": "T12",
@@ -410,17 +780,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "13.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Racer",
         "price": "7 400.00",
         "article": "T13",
@@ -445,17 +841,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "14.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Элегант-1",
         "price": "7 600.00",
         "article": "T14",
@@ -480,17 +902,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "15.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Пегас М (Хром)",
         "price": "8 200.00",
         "article": "T15",
@@ -515,17 +963,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "16.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Patrick M (Хром)",
         "price": "8 200.00",
         "article": "T16",
@@ -550,17 +1024,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "17.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Менеджер-2",
         "price": "8 400.00",
         "article": "T17",
@@ -585,17 +1085,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "18.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Сенатор-2",
         "price": "8 600.00",
         "article": "T18",
@@ -620,17 +1146,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "19.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Надир-2",
         "price": "9 100.00",
         "article": "T19",
@@ -655,17 +1207,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "20.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Атлант-2",
         "price": "9 100.00",
         "article": "T20",
@@ -690,17 +1268,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "21.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Импульс-2",
         "price": "9 300.00",
         "article": "T21",
@@ -725,17 +1329,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "22.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Элегант-3",
         "price": "10 200.00",
         "article": "T22",
@@ -760,17 +1390,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "23.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Надир-3",
         "price": "11 800.00",
         "article": "T23",
@@ -795,17 +1451,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "24.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Атлант 3 ML",
         "price": "11 800.00",
         "article": "T24",
@@ -830,17 +1512,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "25.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Атлант 2 ML",
         "price": "12 300.00",
         "article": "T25",
@@ -865,17 +1573,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "26.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Aura",
         "price": "12 500.00",
         "article": "T26",
@@ -900,17 +1634,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "27.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Релакс",
         "price": "12 500.00",
         "article": "T27",
@@ -935,17 +1695,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "28.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Пегас-3",
         "price": "13 000.00",
         "article": "T28",
@@ -970,17 +1756,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "29.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Пегас LUX",
         "price": "13 000.00",
         "article": "T29",
@@ -1005,17 +1817,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "30.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "RK 20 ",
         "price": "13 300.00",
         "article": "T30",
@@ -1040,17 +1878,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "31.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Элегант-X-SIZE",
         "price": "13 900.00",
         "article": "T31",
@@ -1075,17 +1939,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "32.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Элегант LUX",
         "price": "14 000.00",
         "article": "T32",
@@ -1110,17 +2000,43 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     },
     {
         "image": "33.jpg",
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg",
+            "4.jpg"
+        ],
+        "colors": [
+            {
+                "name": "Черный",
+                "number": "#000000",
+                "engName": "black"
+            },
+            {
+                "name": "Бежевый",
+                "number": "#F5F5DC",
+                "engName": "beige"
+            },
+            {
+                "name": "Серый",
+                "number": "#808080",
+                "engName": "gray"
+            },
+            {
+                "name": "Бордовый",
+                "number": "#9B2D30",
+                "engName": "vinous"
+            }
+        ],
         "name": "Элегант (Глянец)",
         "price": "15 500.00",
         "article": "T33",
@@ -1145,12 +2061,10 @@
             "typeOfVideos": "Жесткий",
             "armrests": "да",
             "tiltingMechanism": "нет",
-            "armrests": "да",
             "typeTiltingMechanism": "синхронный",
             "seatHeightAdjusment": "да",
             "lumbarSupport": "да",
             "guarantee": "да",
-            "lumbarSupport": "да",
             "material": "Пластик/фанера"
         }
     }

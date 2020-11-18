@@ -5,73 +5,28 @@
       <div
         class="product-detail__content d-flex justify-content-between align-items-start"
       >
-        <div class="product-detail__content-img">
-          <img :src="'/img/shop/catalogitem/' + product.image" alt="" />
-        </div>
-        <div class="product-detail__content-text">
-          <h3 class="product-detail__content-text__title">Описание товара</h3>
-          <div class="product-detail__content-text__description">
-            {{ product.description }}
-          </div>
-          <h3 class="product-detail__content-text__title">
-            Характеристики товара
-          </h3>
-          <div class="product-detail__content-text__description">
-            <p>
-              Соединительный узел:{{ product.specifications.connectorAssembly }}
-            </p>
-            <p>
-              Максимальная нагрузка :{{ product.specifications.maximumLoad }}
-            </p>
-            <p>Ширина кресла :{{ product.specifications.widthChair }}</p>
-            <p>Глубина кресла :{{ product.specifications.depthChair }}</p>
-            <p>
-              Высота поднятого кресла :{{
-                product.specifications.heightRaisedChair
-              }}
-            </p>
-            <p>
-              Высота опущенного кресла :{{
-                product.specifications.heightLoweredChair
-              }}
-            </p>
-            <p>Ширина сиденья :{{ product.specifications.seatWidth }}</p>
-            <p>Глубина сиденья :{{ product.specifications.seatDeth }}</p>
-            <p>
-              Высота поднятого сиденья :{{
-                product.specifications.heightRaisedSeat
-              }}
-            </p>
-            <p>
-              Высота опущенного сиденья :{{
-                product.specifications.loweredSeatHeight
-              }}
-            </p>
-            <p>Высота спинки :{{ product.specifications.backHeight }}</p>
-            <p>
-              Материал обивки :{{ product.specifications.upholsteryMaterial }}
-            </p>
-            <p>Подголовник :{{ product.specifications.headrest }}</p>
-            <p>Тип роликов :{{ product.specifications.typeOfVideos }}</p>
-            <p>Подлокотники :{{ product.specifications.armrests }}</p>
-            <p>
-              Механизм качания :{{ product.specifications.tiltingMechanism }}
-            </p>
-            <p>
-              Тип механизма качания :{{
-                product.specifications.typeTiltingMechanism
-              }}
-            </p>
-            <p>
-              Регулировка высоты сиденья :{{
-                product.specifications.seatHeightAdjusment
-              }}
-            </p>
-            <p>Поясничный упор :{{ product.specifications.lumbarSupport }}</p>
-            <p>
-              Гарантия производителя :{{ product.specifications.guarantee }}
-            </p>
-            <p>Материал каркаса :{{ product.specifications.material }}</p>
+        <div
+          class="product-detail__content-img d-flex flex-column justify-content-between align-items-center"
+        >
+          <VueAgile :options="myOptions" v-if="product.gallery.length > 0">
+            <img
+              v-for="(item, index) in product.gallery"
+              :key="index"
+              :src="'/img/shop/catalogitem/' + item"
+              alt=""
+            />
+          </VueAgile>
+          <div v-for="(color, ind) in product.colors" :key="ind">
+            <label
+              :for="color.engName"
+              :style="{ 'background-color': color.number }"
+            ></label>
+            <input
+              type="radio"
+              :id="color.engName"
+              :value="color.name"
+              name="colors"
+            />
           </div>
           <button
             class="product-detail__content-text__button"
@@ -80,6 +35,109 @@
             Добавить в корзину
           </button>
         </div>
+        <div class="product-detail__content-text">
+          <h3 class="product-detail__content-text__title">Описание товара</h3>
+          <div class="product-detail__content-text__description">
+            {{ product.description }}
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Характеристики</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Соединительный узел:</th>
+                <td>{{ product.specifications.connectorAssembly }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Максимальная нагрузка :</th>
+                <td>{{ product.specifications.maximumLoad }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Ширина кресла :</th>
+                <td>{{ product.specifications.widthChair }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Глубина кресла :</th>
+                <td>{{ product.specifications.depthChair }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Высота поднятого кресла :</th>
+                <td>{{ product.specifications.heightRaisedChair }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Высота опущенного кресла :</th>
+                <td>{{ product.specifications.heightLoweredChair }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Ширина сиденья :</th>
+                <td>{{ product.specifications.seatWidth }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Высота поднятого сиденья :</th>
+                <td>{{ product.specifications.heightRaisedSeat }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Высота опущенного сиденья :</th>
+                <td>{{ product.specifications.loweredSeatHeight }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Высота спинки</th>
+                <td>{{ product.specifications.backHeight }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Материал обивки :</th>
+                <td>{{ product.specifications.upholsteryMaterial }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Подголовник :</th>
+                <td>{{ product.specifications.headrest }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Тип роликов :</th>
+                <td>{{ product.specifications.typeOfVideos }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Подлокотники :</th>
+                <td>{{ product.specifications.armrests }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Механизм качания :</th>
+                <td>{{ product.specifications.tiltingMechanism }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Тип механизма качания :</th>
+                <td>{{ product.specifications.typeTiltingMechanism }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Соединительный узел:</th>
+                <td>{{ product.specifications.connectorAssembly }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Регулировка высоты сиденья :</th>
+                <td>{{ product.specifications.seatHeightAdjusment }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Соединительный узел:</th>
+                <td>{{ product.specifications.connectorAssembly }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Поясничный упор :</th>
+                <td>{{ product.specifications.lumbarSupport }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Гарантия производителя :</th>
+                <td>{{ product.specifications.guarantee }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Материал каркаса :</th>
+                <td>{{ product.specifications.material }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -87,12 +145,20 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
+import { VueAgile } from "vue-agile";
 
 export default {
   name: "ProductDetail",
+  components: { VueAgile },
   data() {
     return {
       products: [],
+      myOptions: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        navButtons: true,
+        dots: true,
+      },
     };
   },
   computed: {
@@ -130,6 +196,9 @@ export default {
 
   &__content-img {
     max-width: 30%;
+    & > img {
+      margin-bottom: 50px;
+    }
   }
 
   &__content-text {

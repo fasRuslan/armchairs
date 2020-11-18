@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-menu">
+  <div class="mobile-menu" style="display:none;">
     <button class="nav__toogle nav__toogle--close toogle-js" v-on:click="func">
       <span class="span-menu"></span>
     </button>
