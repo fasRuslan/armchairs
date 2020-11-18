@@ -24,15 +24,21 @@ let store = new Vuex.Store({
         SET_PRODUCT_TO_STATE: (state, products) => {
             state.products = products;
         },
-        SET_CART:(state, product) => {
+        SET_CART:(state, {product, color}) => {
             let isProduct = false;
             state.cart.map(function(item){
                 if (item.article === product.article) {
                  isProduct = true;
-                 item.quantity++;   
+                 item.quantity++;
+                 if (color.length) {
+                     item.current = color;
+                 }
+                 else {
+                     item.current = 'Цвет не выбран'
+                 }
                 }
             });
-            let temp = isProduct || state.cart.push({ ...product, quantity: 1 });
+            let temp = isProduct || state.cart.push({ ...product, quantity: 1, current: color });
             localStorage.setItem("cart", JSON.stringify(state.cart));
             return temp
         },
@@ -59,8 +65,8 @@ let store = new Vuex.Store({
         },
     },
     actions:{
-        ADD_TO_CART({commit}, product){
-            commit("SET_CART", product) 
+        ADD_TO_CART({commit}, {product, color}){
+            commit("SET_CART", {product, color})
         },
         DELETE_CART({commit}, index) {
             commit('REMOVE_CART', index)
@@ -75,7 +81,8 @@ let store = new Vuex.Store({
             commit('CLEAR')
         },
         GET_PRODUCTS({commit}) {
-            return axios('http://www.json-generator.com/api/json/get/cqPmcTTXTm?indent=2', {
+            //return axios('http://www.json-generator.com/api/json/get/cqPmcTTXTm?indent=2', {
+            return axios('http://localhost:3000/products', {
                 method: "GET"
             })
                 .then((products) => {

@@ -35,8 +35,8 @@ export default {
   },
   methods: {
     ...mapActions(["GET_PRODUCTS", "ADD_TO_CART"]),
-    addToCart(data) {
-      this.ADD_TO_CART(data);
+    addToCart(product, color) {
+      this.ADD_TO_CART({product, color});
     },
   },
   created() {
