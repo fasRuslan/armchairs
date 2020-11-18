@@ -8,13 +8,17 @@
         <div
           class="product-detail__content-img d-flex flex-column justify-content-between align-items-center"
         >
-          <VueAgile :options="myOptions" v-if="product.gallery.length > 0">
-            <img
-              v-for="(item, index) in product.gallery"
-              :key="index"
-              :src="'/img/shop/catalogitem/' + item"
-              alt=""
-            />
+          <VueAgile :options="myOptions" v-if="product.gallery.length > 0" class="slider">
+            <div
+                v-for="item in product.gallery"
+                :key="item"
+            >
+              <img
+                  :src="'/img/shop/catalogitem/' + item"
+                  alt=""
+                  class="img-fluid"
+              />
+            </div>
           </VueAgile>
           <div v-for="(color, ind) in product.colors" :key="ind">
             <label
@@ -188,6 +192,11 @@ export default {
 <style lang="scss">
 .product-detail {
   padding: 60px 2%;
+
+  .slider {
+    max-width: 100%;
+  }
+
   &__title {
   }
 
