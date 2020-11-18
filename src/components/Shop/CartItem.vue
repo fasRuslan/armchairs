@@ -25,7 +25,7 @@
     </td>
     <td class="cart__table-td">
       <div class="cart-item__subtotal">
-        {{ cart_item.price * cart_item.quantity }} ₽
+        {{ parseInt(cart_item.price.replace(' ', '')) * cart_item.quantity }} ₽
       </div>
     </td>
   </tr>
