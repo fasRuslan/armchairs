@@ -16,7 +16,7 @@
                 </td>
                 <td class="order__item-title">"{{ item.name }}"</td>
                 <td>Кол-во: {{ item.quantity }} шт.</td>
-                <td>Сумма: {{ item.price * item.quantity }} ₽</td>
+                <td>Сумма: {{ parseInt(item.price.replace(' ', '')) * item.quantity }} ₽</td>
               </tr>
             </tbody>
           </table>
@@ -156,9 +156,9 @@ export default {
       if (this.cart_data.length) {
         for (let item of this.cart_data) {
           if (item.priceSale) {
-            price = item.priceSale;
+            price = parseInt(item.priceSale.replace(' ', ''));
           } else {
-            price = item.price;
+            price = parseInt(item.price.replace(' ', ''));
           }
           result.push(price * item.quantity);
         }
