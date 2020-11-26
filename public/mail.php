@@ -71,6 +71,9 @@ foreach ($cart as $item) :
                             Количество: ' . $item["quantity"] . '
                         </span>
                         <span style="display:inline-block; width:300px;">
+                            Цвет: ' . $item["currentColor"] . '
+                        </span>
+                        <span style="display:inline-block; width:300px;">
                             Цена: ' . $item["price"] . '
                         </span>
                     </td>

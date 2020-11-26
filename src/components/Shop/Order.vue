@@ -16,7 +16,7 @@
                 </td>
                 <td class="order__item-title">"{{ item.name }}"</td>
                 <td>Кол-во: {{ item.quantity }} шт.</td>
-                <td>Сумма: {{ item.price * item.quantity }} ₽</td>
+                <td>Сумма: {{ formatPrice(parseInt(item.price.replace(' ', '')) * item.quantity) }} ₽</td>
               </tr>
             </tbody>
           </table>
@@ -86,7 +86,7 @@
           <div class="message">{{ validation.firstError("address") }}</div>
         </div>
         <div class="order__total">
-          <h3 class="order__form-title">Итого к оплате: {{ cartTotal }} ₽</h3>
+          <h3 class="order__form-title">Итого к оплате: {{ formatPrice(cartTotal) }} ₽</h3>
           <input type="hidden" :value="cartTotal" name="total" />
         </div>
         <div class="form-group">
@@ -156,9 +156,9 @@ export default {
       if (this.cart_data.length) {
         for (let item of this.cart_data) {
           if (item.priceSale) {
-            price = item.priceSale;
+            price = parseInt(item.priceSale.replace(' ', ''));
           } else {
-            price = item.price;
+            price = parseInt(item.price.replace(' ', ''));
           }
           result.push(price * item.quantity);
         }
@@ -175,6 +175,10 @@ export default {
   },
   methods: {
     ...mapActions(["CLEAR_CART"]),
+    formatPrice(value) {
+      let val = (value/1).toFixed(2)
+      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+    },
     mail: function () {
       let self = this;
       axios({

@@ -16,7 +16,7 @@
       <h4 class="catalog-item__name">{{ product.name }}</h4>
       <p class="catalog-item__price">Цена: {{ product.price }}р.</p>
     </router-link>
-    <button class="catalog-item__add-to-card-button" @click="sendDataToParent">
+    <button class="catalog-item__add-to-card-button" @click="sendDataToParent(product, color)">
       Добавить в корзину
     </button>
   </div>
@@ -34,11 +34,13 @@ export default {
     },
   },
   data() {
-    return {};
+    return {
+      color: 'Цвет не выбран'
+    };
   },
   methods: {
-    sendDataToParent() {
-      this.$emit("sendarticle", this.product);
+    sendDataToParent(product, color) {
+      this.$emit("sendarticle", product, color);
     },
   },
 };

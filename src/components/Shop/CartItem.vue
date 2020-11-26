@@ -25,7 +25,7 @@
     </td>
     <td class="cart__table-td">
       <div class="cart-item__subtotal">
-        {{ cart_item.price * cart_item.quantity }} ₽
+        {{ formatPrice(parseInt(cart_item.price.replace(' ', '')) * cart_item.quantity) }} ₽
       </div>
     </td>
   </tr>
@@ -51,6 +51,10 @@ export default {
     increment() {
       this.$emit("increment");
     },
+    formatPrice(value) {
+      let val = (value/1).toFixed(2)
+      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+    }
   },
 };
 </script>
